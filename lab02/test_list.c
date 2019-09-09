@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "list.h"
 
-#define LIST_SIZE 25
-
 unsigned int list_size(node**);
 
 /* Return the size of the linked list. */
@@ -92,6 +90,12 @@ int main() {
 	printf("Reversing the list. Size of list is %u and it should be 1, the head's "
 		    "val and next attributes are %i and %p and they should be 80 and NULL\n", list_size(smallList), 
 		    (*smallList)->val, (*smallList)->next);
+
+	if (is_correct) {
+		printf("\n\n--------------TEST PASSED----------------");
+	} else{
+		printf("\n\n--------------TEST FAILED----------------");
+	}
 
 	return !is_correct; 
 }
