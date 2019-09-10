@@ -12,7 +12,7 @@ void append_node (node** head_ptr, int new_data) {
 	}
 	node* curr = *head_ptr;
 	while (/* YOUR CODE HERE */ != NULL) {
-		curr++;
+		curr = curr->next;
 	}
 	/* Insert node at the end of the list */
 	/* YOUR CODE HERE */
