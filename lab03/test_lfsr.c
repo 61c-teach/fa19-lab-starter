@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-#include "lsfr.h"
+#include "lfsr.h"
 
 int main() {
     int8_t *numbers = (int8_t*) malloc(sizeof(int8_t) * 65535);
