@@ -3,7 +3,7 @@ start_msg:  .asciiz "List before: "
 end_msg:    .asciiz "List after: "
 
 .text
-main:   
+main:
     jal ra, create_default_list
     add s0, a0, x0  # $v0 = $s0 is head of node list
 
@@ -23,9 +23,12 @@ main:
     # issue the call to map
     jal ra, map
 
-    #print the list
+    # print the list
     add a0, s0, x0
     jal ra, print_list
+
+    # print another newline
+    jal ra, print_newline
 
     addi a0, x0, 10
     ecall #Terminate the program
@@ -49,7 +52,7 @@ map:
     # Call the function in question on that value. DO NOT use a label (be prepared to answer why).
     # What function? Recall the parameters of "map"
     ### YOUR CODE HERE ###
-    
+
     # store the returned value back into the node
     # Where can you assume the returned value is?
     ### YOUR CODE HERE ###
@@ -69,7 +72,7 @@ map:
 done:
     # Epilogue: Restore register values and free space from the stack
     ### YOUR CODE HERE ###
-    
+
     jr ra # Return to caller
 
 square:
