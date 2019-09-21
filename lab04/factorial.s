@@ -1,3 +1,5 @@
+.globl factorial
+
 .data
 n: .word 8
 

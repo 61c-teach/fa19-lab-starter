@@ -1,6 +1,4 @@
-.data
-start_msg:  .asciiz "List before: "
-end_msg:    .asciiz "List after: "
+.globl map
 
 .text
 main:
