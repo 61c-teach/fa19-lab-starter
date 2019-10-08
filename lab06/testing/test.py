@@ -10,7 +10,7 @@ import re
 import sys
 import shutil
 
-file_locations = os.path.expanduser(os.getcwd())
+file_locations = os.getcwd()
 logisim_location = os.path.join(os.getcwd(),"logisim-evolution.jar")
 
 class TestCase():
