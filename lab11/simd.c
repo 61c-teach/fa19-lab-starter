@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "common.h"
 
-/* ***DON'T MODIFY THIS FILE! ONLY MODIFY COMMON.H!*** */
+/* ***DON'T MODIFY THIS FILE! ONLY MODIFY COMMON.C!*** */
 
 int main(int argc, char* argv[]) {
 	printf("Let's generate a randomized array.\n");
